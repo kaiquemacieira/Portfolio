@@ -54,7 +54,9 @@
             
             <div class="nav__btns">
                 <!--theme change button  -->
-                <i class="uil uil-moon" id="change-theme"></i> <!-- olhar isso ai-->
+
+
+                <i class="uil uil-moon-eclipse change-theme" id="theme-button"></i> <!-- olhar isso ai-->
 
                 <div class="nav__toggle" id="nav--toggle">
                     <i class="uil uil-apps"></i>
@@ -71,13 +73,11 @@
             <div class="home__container container grid">
                 <div class="home__content grid">
                     <div class="home__social">
-                        <a href="https://www.linkedin.com/" target="_blank" class="home__social-icon">
+                        <a href="https://www.linkedin.com/in/kmacieira/" target="_blank" class="home__social-icon">
                             <i class="uil uil-linkedin-alt"></i>
                         </a>
-                        <a href="https://dribbble.com/" target="_blank"  class="home__social-icon">
-                            <i class="uil uil-dribbble"></i>
-                        </a>
-                        <a href="https://github.com/" target="_blank"  class="home__social-icon">
+                        
+                        <a href="https://github.com/kaiquemacieira" target="_blank"  class="home__social-icon">
                             <i class="uil uil-github"></i>
                         </a>
                     </div>
@@ -475,40 +475,43 @@
                 </div>
 
 
-                <form action="" class="contact__form grid">
+                <form action="https://api.staticforms.xyz/submit" method="post" method="post" class="contact__form grid">
+                    <input type="hidden" name="accessKey" value="7c01b718-e024-43f3-8b16-5c833aedaf7e">
+                    
                     <div class="contact__inputs grid">
                         <div class="contact__content">
-                            <label for="" class="contact__label">Nome</label>
-                            <input type="text" class="contact__input">
+                            <label for="inputNome" class="contact__label">Nome</label>
+                            <input type="text" class="contact__input"name="name">
                         </div>
                     </div>
 
                     <div class="contact__inputs grid">
                         <div class="contact__content">
-                            <label for="" class="contact__label">Email</label>
-                            <input type="email" class="contact__input">
+                            <label for="inputEmail" class="contact__label">Email</label>
+                            <input type="email" class="contact__input" name="email">
                         </div>
                     </div>
 
                     <div class="contact__inputs grid">
                         <div class="contact__content">
-                            <label for="" class="contact__label">Projeto</label>
-                            <input type="text" class="contact__input">
+                            <label for="inputProject" class="contact__label">Projeto</label>
+                            <input type="text" class="contact__input" name="Projeto">
                         </div>
                     </div>
 
                     <div class="contact__inputs grid">
                         <div class="contact__content">
-                            <label for="" class="contact__label">Mensagem</label>
-                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                            <label for="textAreaMensagem" class="contact__label">Mensagem</label>
+                            <textarea name="message" id="" cols="0" rows="7" class="contact__input"></textarea>
                         </div>
                     </div>
                     <div>
-                        <a href="#" class="button button--flex">
+                        <button href="#" class="button button--flex">
                             Envie uma Mensagem
                             <i class="uil uil-message button__icon"></i>
 
-                        </a>
+                            
+                        </button>
                     </div>
                 </form>
 
@@ -523,7 +526,7 @@
         <div class="footer__bg">
             <div class="footer__container container grid">
                 <div>
-                    <h1 class="footer__title">Kaique</h1>
+                    <h1 class="footer__title">Kaique Macieira</h1>
                     <span class="footer__subtitle">Front-end developer</span>
                 </div>
 
@@ -569,10 +572,7 @@
     </a>
 
 
-    <script src="assets/script.js">
-
-
-    </script>
+    <script src="assets/script.js"></script>
     <script src="assets/swiper-bundle.min.js"></script>
 </body>
 </html>
